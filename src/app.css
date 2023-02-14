@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* Stlye standard */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    transition: .3 ease;
+}
+
+/* Color */
+:root{
+    --PrimaryColor: hsl(168, 76%, 27%);
+    --HoverColor: hsl(168, 45%, 49%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 20%);
+    --textColor: hsl(240, 1%, 48%);
+    --greyBackground: hsl(0, 0%, 96%);
+    --geryText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .4rem 1.5rem;
+    background: var(--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.btn a{
+    color: var(--white);
+    font-weight: 500;
+}
+
+.btn:hover a{
+    color: var(--whiteColor);
+}
+
+.sectionIntro{
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.sectionIntro .sectionTitle{
+    color: var(--blackColor);
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.sectionIntro p{
+    font-size: 13px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+img, video{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+}
+
+/** Style default for web app */
