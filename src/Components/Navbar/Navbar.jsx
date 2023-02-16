@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
 import './navbar.css';
+import React, { useState } from 'react';
+
 import {SiYourtraveldottv} from 'react-icons/si';
 import {AiOutlineCloseCircle} from 'react-icons/ai';
 import {AiOutlineMenuUnfold} from 'react-icons/ai';
 
 
-function Navbar() {
+function Navbar(props) {
 
     const [active, setActive] = useState('navBar');
 
@@ -19,11 +20,19 @@ function Navbar() {
         setActive('navBar');
     }
 
+    // aggiorna URL con il nome della pagina
+    // con il metodo preventDefault() si cambia pagina senza ricaricare l'URL
+    const handleClick = (event, page) => {
+        event.preventDefault();
+        props.setCurrentPage(page);
+        window.history.pushState({}, page, `/${page}`);
+      };
+
     return (
         <section className="navbar__section">
             <div className="header">
                 <div className="logoDiv">
-                    <a className="logo">
+                    <a href="/" className="logo">
                         <h1 className="flex"><SiYourtraveldottv className="icon"/>
                         Campus IT
                         </h1>
@@ -32,24 +41,32 @@ function Navbar() {
                 <div className={active}>
                     <ul className="nav__lists flex">
                         <li className="navItem">
-                            <a href="#" className="nav__links">Home</a>
+                            <a href="/" className="nav__links" onClick={(event) => handleClick(event, 'home')}>
+                            Home
+                            </a>
                         </li>
                         <li className="navItem">
-                            <a href="#" className="nav__links">Services</a>
+                            <a href="/Sercives" className="nav__links" onClick={(event) => handleClick(event, 'services')}>
+                            Services
+                            </a>
                         </li>
                         <li className="navItem">
-                            <a href="#" className="nav__links">About</a>
+                            <a href="/About" className="nav__links" onClick={(event) => handleClick(event, 'about')}>
+                            About
+                            </a>
                         </li>
                         <li className="navItem">
-                            <a href="#" className="nav__links">Contact</a>
+                            <a href="/Contact" className="nav__links" onClick={(event) => handleClick(event, 'contact')}>
+                            Contact
+                            </a>
                         </li>
 
                         <div className="header__btns flex">
                             <button className="btn login__btn">
-                                <a href="#">Login</a>
+                                <a href="/Login">Login</a>
                             </button>
                             <button className="btn">
-                                <a href="#">Sign Up</a>
+                                <a href="/Register">Sign Up</a>
                             </button>
                         </div>
                     </ul>

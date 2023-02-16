@@ -1,6 +1,9 @@
 import React from 'react';
 import './home.css';
 
+
+
+
 function Home() {
     return (
         <section className="home">
@@ -18,7 +21,7 @@ function Home() {
                     </p>
 
                     <button className="btn">
-                        <a href="#">Esplora Subito</a>
+                        <a href="/">Esplora Subito</a>
                     </button>
                 </div>
 
@@ -47,6 +50,7 @@ function Home() {
             </div>
             
         </section>
+        
     );
 }
 

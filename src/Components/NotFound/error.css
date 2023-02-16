@@ -10,9 +10,9 @@
   --inputColor: hsl(330, 12%, 97%);
 }
 
-.service {
+.error {
   height: 80vh;
-  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/service.jpg");
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/notFound.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,16 +22,16 @@
   margin: auto;
   position: relative;
 }
-.service .sectionContainer .homeText {
+.error .sectionContainer .homeText {
   text-align: center;
 }
-.service .sectionContainer .homeText .title {
+.error .sectionContainer .homeText .title {
   color: var(--whiteColor);
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.5rem;
 }
-.service .sectionContainer .homeText .subTitle {
+.error .sectionContainer .homeText .subTitle {
   color: var(--whiteColor);
   opacity: 0.9;
   font-size: 13px;
@@ -41,11 +41,11 @@
   text-align: center;
   margin: auto;
 }
-.service .sectionContainer .homeText .btn {
+.error .sectionContainer .homeText .btn {
   padding: 0.6rem 1.5rem;
   color: var(--whiteColor);
 }
-.service .sectionContainer .homeCard {
+.error .sectionContainer .homeCard {
   width: 80%;
   border-radius: 1rem;
   padding: 2rem;
@@ -58,17 +58,17 @@
   left: 50%;
   box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
 }
-.service .sectionContainer .homeCard .universityDiv, .service .sectionContainer .homeCard .courseDiv, .service .sectionContainer .homeCard .cityDiv {
+.error .sectionContainer .homeCard .universityDiv, .error .sectionContainer .homeCard .courseDiv, .error .sectionContainer .homeCard .cityDiv {
   width: 100%;
 }
-.service .sectionContainer .homeCard .universityDiv label, .service .sectionContainer .homeCard .courseDiv label, .service .sectionContainer .homeCard .cityDiv label {
+.error .sectionContainer .homeCard .universityDiv label, .error .sectionContainer .homeCard .courseDiv label, .error .sectionContainer .homeCard .cityDiv label {
   display: block;
   color: var(--textColor);
   font-weight: 500;
   font-size: 13px;
   padding-bottom: 0.4rem;
 }
-.service .sectionContainer .homeCard .universityDiv input, .service .sectionContainer .homeCard .courseDiv input, .service .sectionContainer .homeCard .cityDiv input {
+.error .sectionContainer .homeCard .universityDiv input, .error .sectionContainer .homeCard .courseDiv input, .error .sectionContainer .homeCard .cityDiv input {
   width: 100%;
   background: var(--inputColor);
   border-radius: 10px;
@@ -77,20 +77,20 @@
   font-size: 13px;
   font-weight: 500;
 }
-.service .sectionContainer .homeCard .universityDiv input::-moz-placeholder, .service .sectionContainer .homeCard .courseDiv input::-moz-placeholder, .service .sectionContainer .homeCard .cityDiv input::-moz-placeholder {
+.error .sectionContainer .homeCard .universityDiv input::-moz-placeholder, .error .sectionContainer .homeCard .courseDiv input::-moz-placeholder, .error .sectionContainer .homeCard .cityDiv input::-moz-placeholder {
   font-size: 13px;
   opacity: 0.5;
   font-weight: 400;
 }
-.service .sectionContainer .homeCard .universityDiv input::placeholder, .service .sectionContainer .homeCard .courseDiv input::placeholder, .service .sectionContainer .homeCard .cityDiv input::placeholder {
+.error .sectionContainer .homeCard .universityDiv input::placeholder, .error .sectionContainer .homeCard .courseDiv input::placeholder, .error .sectionContainer .homeCard .cityDiv input::placeholder {
   font-size: 13px;
   opacity: 0.5;
   font-weight: 400;
 }
-.service .sectionContainer .homeCard .universityDiv input:focus, .service .sectionContainer .homeCard .courseDiv input:focus, .service .sectionContainer .homeCard .cityDiv input:focus {
+.error .sectionContainer .homeCard .universityDiv input:focus, .error .sectionContainer .homeCard .courseDiv input:focus, .error .sectionContainer .homeCard .cityDiv input:focus {
   outline: none;
 }
-.service .sectionContainer .homeCard .btn {
+.error .sectionContainer .homeCard .btn {
   width: 100%;
   padding: 0.6rem 1.5rem;
   color: var(--whiteColor);
@@ -114,4 +114,4 @@
   .home .sectionContainer .homeText .subTitle {
     font-size: 18px;
   }
-}/*# sourceMappingURL=services.css.map */
+}/*# sourceMappingURL=error.css.map */

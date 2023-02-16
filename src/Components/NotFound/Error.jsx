@@ -1,21 +1,20 @@
 import React from 'react';
-import './about.css'
+import './error.css';
 
-function About() {
+function Error(props) {
     return (
-        <section className="about">
+        <section className="error">
             <div className="sectionContainer container">
                 
                 <div className="homeText">
-
-                    <h1 className="title">
-                    Chi Siamo
-                    </h1>
+            
+                   
                 </div>
             </div>
             
         </section>
+
     );
 }
 
-export default About;
+export default Error;

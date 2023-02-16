@@ -1,11 +1,20 @@
 import React from 'react';
-import './sercices.css'
+import './services.css';
 
 function Services() {
     return (
-        <div>
+        <section className="service">
+            <div className="sectionContainer container">
+                
+                <div className="homeText">
+
+                    <h1 className="title">
+                    I Nostri Servizi
+                    </h1>
+                </div>
+            </div>
             
-        </div>
+        </section>
     );
 }
 
